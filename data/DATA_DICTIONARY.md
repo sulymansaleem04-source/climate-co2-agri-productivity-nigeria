@@ -18,5 +18,5 @@
 - **TEMP is a temperature-change (anomaly) series, not an absolute temperature.** Values are relative to a baseline, which is why some years are negative (e.g. 1992: -0.067).
 - **Transformations.** AGDP, RAIN and LAB are natural-logged in the estimated model. TEMP, CO2 and LAND stay in levels. The CSV holds the raw, untransformed values.
 - **Compilation.** Author's compilation (2026) from the sources above. Where sources overlap, official national sources were preferred for economic variables and international databases for climate variables.
-- **Interpolation.** TODO: state here whether any year was interpolated and, if so, which variable and year.
+-**Interpolation.** No interpolation was applied. All values are as obtained from the sources above, with no missing observations.
 - **Integrity check.** The CSV matches Appendix B of the project report value for value.
