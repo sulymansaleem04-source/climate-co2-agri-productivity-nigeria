@@ -1,0 +1,9 @@
+test,statistic,value,p_value
+Breusch-Godfrey (2 lags),F-statistic,0.719389,0.498155
+Breusch-Godfrey (2 lags),Obs*R-squared,2.02569,0.363184
+Breusch-Pagan-Godfrey,F-statistic,1.987264,0.092461
+Breusch-Pagan-Godfrey,Obs*R-squared,13.149435,0.10681
+Breusch-Pagan-Godfrey,Scaled explained SS,45.513514,0.0
+Jarque-Bera (residuals),JB statistic,210.244953,0.0
+Ramsey RESET (powers 2-3),F-statistic,2.494644,0.105571
+Ramsey RESET (powers 2-3),Likelihood ratio,6.745121,0.034302
