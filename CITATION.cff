@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "Climate Change, CO2 Emissions and Agricultural Productivity in Nigeria (1990-2024): Data, Code and Results"
+type: dataset
+authors:
+  - family-names: Agboola
+    given-names: Sulyman Saleem
+version: 1.0.0
+date-released: 2026-10-25
+license: CC-BY-4.0
+abstract: "ARDL bounds-testing analysis of the effects of temperature change, rainfall and CO2 emissions on agricultural productivity in Nigeria, 1990-2024, with open-source replication code."
+keywords:
+  - climate change
+  - agricultural productivity
+  - Nigeria
+  - ARDL
+  - bounds test
+  - econometrics
