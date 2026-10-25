@@ -61,14 +61,37 @@ AGDP, RAIN and LAB are logged. TEMP, CO2 and LAND stay in levels. Coefficients o
 
 ## 5. Headline results
 
-| Result | Value |
+**Specification and cointegration**
+
+| Item | Result |
 |---|---|
-| Long-run relationship (bounds test) | Confirmed |
+| Selected model | ARDL(1,2,0,0,0,0) by AIC, maximum 2 lags, constant (Case 2), 33 observations (1992–2024) |
+| Bounds test F-statistic | 4.302, above the 5% upper bound of 4.013, so a long-run relationship exists |
 | Error correction term | -0.0734 (about 7% of a deviation corrected per year) |
-| TEMP, long run | Negative, significant: a 1% rise lowers AGDP by about 0.22% |
-| LAND, long run | Positive, significant: a 1% rise raises AGDP by about 0.04% |
-| RAIN and CO2, long run | Negative, not significant |
-| LAB, long run | Positive, not significant |
+
+**Coefficients from the bounds-test (conditional error-correction) regression**
+
+TEMP and LAND are in levels, so their coefficients are semi-elasticities (a one-unit change in the regressor changes AGDP by roughly 100 × coefficient per cent). LRAIN and LLAB are logged, so their coefficients are elasticities.
+
+| Variable | Coefficient | p-value | Sign as expected |
+|---|---|---|---|
+| TEMP | -0.2219 | 0.039 | Yes |
+| LRAIN | -0.1487 | 0.530 | No |
+| CO2 | -0.4423 | 0.087 | Yes |
+| LAND | 0.0353 | 0.018 | Yes |
+| LLAB | 0.1851 | 0.419 | Yes |
+
+**Long-run multipliers.** Each coefficient divided by the negative of the error correction term, with delta-method standard errors (computed in `code/ardl_replication.py`):
+
+| Variable | Long-run multiplier | p-value |
+|---|---|---|
+| TEMP | -3.02 | 0.418 |
+| LRAIN | -2.02 | 0.554 |
+| CO2 | -6.02 | 0.283 |
+| LAND | 0.48 | 0.349 |
+| LLAB | 2.52 | 0.646 |
+
+The long-run multipliers are imprecisely estimated with only 33 observations, and none is individually significant at 5%. The significance of TEMP and LAND in the table above refers to the bounds-test regression coefficients.
 
 Full tables and diagnostics are in `results/`.
 
